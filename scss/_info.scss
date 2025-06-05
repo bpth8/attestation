@@ -1,0 +1,62 @@
+.personal {
+  margin-top: 40px;
+
+  &__title {
+    font-size: 48px;
+
+    &-city {
+    font-size: 24px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__skills {
+  font-size: 32px;
+  
+    &-list {
+      display: flex;
+      gap: 25px;
+    }
+  }
+
+  &__about {
+    
+    font-size: 32px;
+
+    &-text {
+    
+    }
+  }
+
+  &__contact {
+    
+    &__flexbox {
+      display: flex;
+      font-size: 32px;
+      color: #121212;
+      gap: 30px;
+      
+      &-mail {
+        border: 1px solid #121212;
+        background-color: white;
+      }
+
+      &-message {
+        border: 1px solid #121212;
+        background-color: white;
+      }
+    }
+
+    &__button {
+      width: 702px;
+      font-size: 32px;
+      color: white;
+      background-color: black;
+    }
+  }
+
+}

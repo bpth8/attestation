@@ -1,0 +1,25 @@
+.flexbox {
+  display: flex;
+}
+
+.main {
+  position: relative;
+
+  &__image {
+    display: block;
+  }
+
+  &__backround {
+    position: absolute;
+    text-align: center;
+    width: 638px;
+    bottom: 0;
+    background-color: black;
+
+    &-title {
+      font-size: 64px;
+      color:white;
+      padding: 14px 0 14px 0;
+    }
+  }
+}

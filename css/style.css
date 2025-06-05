@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.main {
+  position: relative;
+}
+.main__image {
+  display: block;
+}
+.main__backround {
+  position: absolute;
+  text-align: center;
+  width: 638px;
+  bottom: 0;
+  background-color: black;
+}
+.main__backround-title {
+  font-size: 64px;
+  color: white;
+  padding: 14px 0 14px 0;
+}
+
+.personal {
+  margin-top: 40px;
+}
+.personal__title {
+  font-size: 48px;
+}
+.personal__title-city {
+  font-size: 24px;
+}
+.personal__social {
+  display: flex;
+  gap: 30px;
+}
+.personal__skills {
+  font-size: 32px;
+}
+.personal__skills-list {
+  display: flex;
+  gap: 25px;
+}
+.personal__about {
+  font-size: 32px;
+}
+.personal__contact__flexbox {
+  display: flex;
+  font-size: 32px;
+  color: #121212;
+  gap: 30px;
+}
+.personal__contact__flexbox-mail {
+  border: 1px solid #121212;
+  background-color: white;
+}
+.personal__contact__flexbox-message {
+  border: 1px solid #121212;
+  background-color: white;
+}
+.personal__contact__button {
+  width: 702px;
+  font-size: 32px;
+  color: white;
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
