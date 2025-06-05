@@ -110,12 +110,18 @@ a {
   gap: 30px;
 }
 .personal__contact__flexbox-mail {
+  width: 338px;
   border: 1px solid #121212;
+  border-radius: 11px;
   background-color: white;
+  padding: 14px 0 14px 16px;
 }
 .personal__contact__flexbox-message {
+  width: 338px;
   border: 1px solid #121212;
+  border-radius: 11px;
   background-color: white;
+  padding: 14px 0 14px 16px;
 }
 .personal__contact__button {
   width: 702px;
