@@ -59,13 +59,16 @@ a {
 
 .flexbox {
   display: flex;
+  gap: clamp(25px, 10vw, 50px);
 }
 
 .main {
   position: relative;
 }
-.main__image {
-  display: block;
+@media screen and (max-width: 992px) {
+  .main__image {
+    width: 372px;
+  }
 }
 .main__backround {
   position: absolute;
@@ -81,7 +84,7 @@ a {
 }
 
 .personal {
-  margin-top: 40px;
+  margin-top: clamp(20px, 2.86vw, 40px);
 }
 .personal__title {
   font-size: clamp(32px, 5vw, 48px);
@@ -93,7 +96,7 @@ a {
 .personal__social {
   display: flex;
   gap: 2.14vw;
-  margin-top: 50px;
+  margin-top: clamp(30px, 3.57vw, 50px);
 }
 .personal__social-effect {
   transition: transform 0.3s;
@@ -103,10 +106,11 @@ a {
 }
 .personal__skills {
   font-size: clamp(24px, 4vw, 32px);
-  margin-top: 50px;
+  margin-top: clamp(30px, 3.57vw, 50px);
 }
 .personal__skills-list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
   gap: 1.78vw;
   color: white;
@@ -123,7 +127,7 @@ a {
   transform: rotate(2deg) translate(5px);
 }
 .personal__about {
-  margin-top: 50px;
+  margin-top: clamp(30px, 3.57vw, 50px);
   font-size: clamp(20px, 4vw, 32px);
 }
 .personal__about-text {
@@ -131,7 +135,7 @@ a {
   margin-top: 20px;
 }
 .personal__contact {
-  margin-top: 50px;
+  margin-top: clamp(30px, 3.57vw, 50px);
 }
 .personal__contact__flexbox {
   display: flex;
@@ -152,7 +156,7 @@ a {
   background-color: white;
 }
 .personal__contact__button {
-  margin-top: 25px;
+  margin-top: clamp(20px, 1.79vw, 25px);
   font-size: clamp(24px, 4vw, 32px);
   padding: 14px 134px 14px 134px;
   color: white;

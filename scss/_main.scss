@@ -1,12 +1,15 @@
 .flexbox {
   display: flex;
+  gap: clamp(25px, 10vw, 50px);
 }
 
 .main {
   position: relative;
 
   &__image {
-    display: block;
+    @media screen and (max-width: 992px) {
+      width: 372px;
+    }
   }
 
   &__backround {
