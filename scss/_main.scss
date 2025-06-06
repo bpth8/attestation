@@ -12,12 +12,13 @@
   &__backround {
     position: absolute;
     text-align: center;
+    
     width: 638px;
     bottom: 0;
     background-color: black;
 
     &-title {
-      font-size: 64px;
+      font-size: clamp(36px, 4.57vw, 64px);
       color:white;
       padding: 14px 0 14px 0;
     }

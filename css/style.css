@@ -75,7 +75,7 @@ a {
   background-color: black;
 }
 .main__backround-title {
-  font-size: 64px;
+  font-size: clamp(36px, 4.57vw, 64px);
   color: white;
   padding: 14px 0 14px 0;
 }
@@ -84,15 +84,15 @@ a {
   margin-top: 40px;
 }
 .personal__title {
-  font-size: 48px;
+  font-size: clamp(32px, 5vw, 48px);
 }
 .personal__title-city {
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 24px);
   margin-top: 20px;
 }
 .personal__social {
   display: flex;
-  gap: 30px;
+  gap: 2.14vw;
   margin-top: 50px;
 }
 .personal__social-effect {
@@ -102,25 +102,29 @@ a {
   transform: scale(1.3);
 }
 .personal__skills {
-  font-size: 32px;
+  font-size: clamp(24px, 4vw, 32px);
   margin-top: 50px;
 }
 .personal__skills-list {
   display: flex;
   margin-top: 20px;
-  gap: 25px;
+  gap: 1.78vw;
   color: white;
 }
 .personal__skills-list li {
+  display: inline-block;
+  transition: 0.4s;
   text-align: center;
-  width: 198px;
-  padding: 14px 0 14px 0;
+  padding: 14px 55px 14px 55px;
   border-radius: 44px;
   background-color: #414141;
 }
+.personal__skills-list li:hover {
+  transform: rotate(2deg) translate(5px);
+}
 .personal__about {
   margin-top: 50px;
-  font-size: 32px;
+  font-size: clamp(20px, 4vw, 32px);
 }
 .personal__about-text {
   text-indent: 30px;
@@ -131,28 +135,32 @@ a {
 }
 .personal__contact__flexbox {
   display: flex;
-  font-size: 32px;
+  font-size: clamp(24px, 4vw, 32px);
   color: #121212;
-  gap: 30px;
+  gap: 2.14vw;
 }
 .personal__contact__flexbox-mail {
-  width: 338px;
+  padding: 14px 157px 14px 16px;
   border: 1px solid #121212;
   border-radius: 11px;
   background-color: white;
-  padding: 14px 0 14px 16px;
 }
 .personal__contact__flexbox-message {
-  width: 338px;
+  padding: 14px 88px 14px 16px;
   border: 1px solid #121212;
   border-radius: 11px;
   background-color: white;
-  padding: 14px 0 14px 16px;
 }
 .personal__contact__button {
-  width: 702px;
-  font-size: 32px;
+  margin-top: 25px;
+  font-size: clamp(24px, 4vw, 32px);
+  padding: 14px 134px 14px 134px;
   color: white;
   border-radius: 11px;
-  background-color: black;
+  background-color: #121212;
+  transition: all 0.5s ease;
+}
+.personal__contact__button:hover {
+  box-shadow: 0 0 10px #000;
+  transition: all 0.5s ease;
 }/*# sourceMappingURL=style.css.map */
