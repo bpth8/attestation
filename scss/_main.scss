@@ -4,26 +4,36 @@
 }
 
 .main {
-  position: relative;
 
-  &__image {
-    @media screen and (max-width: 992px) {
-      width: 372px;
+  &__profile {
+    position: relative;;
+
+    &__image {
+      display: block;
+      @media screen and (max-width: 992px) {
+        width: 58.50vw; //vrem
+      }
     }
-  }
 
-  &__backround {
-    position: absolute;
-    text-align: center;
-    
-    width: 638px;
-    bottom: 0;
-    background-color: black;
+    &__backround {
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      background-color: black;
 
-    &-title {
-      font-size: clamp(36px, 4.57vw, 64px);
-      color:white;
-      padding: 14px 0 14px 0;
+      @media screen and (max-width: 992px) {
+        
+      }
+
+      &-title {
+        font-size: clamp(36px, 4.57vw, 64px);
+        color:white;
+        padding: 14px 96px 14px 96px;
+          
+        @media screen and (max-width: 992px) {
+          padding: 12px 61px 12px 61px;
+        }
+      }
     }
   }
 }
