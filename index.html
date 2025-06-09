@@ -10,7 +10,11 @@
   <main class="container flexbox">
     <div class="main">
       <div class="main__profile">
-        <img src="./img/pictures.svg" class="main__profile__image" alt="Разработчик">
+        <picture>
+          <source srcset="./img/pictures-tablets.svg" media="(max-width: 992px)">
+          <img class="main__profile__image" src="./img/pictures.svg" alt="Спортсмен">
+        </picture>
+
         <div class="main__profile__backround">
           <div class="main__profile__backround-title">РАЗРАБОТЧИК</div>
         </div>

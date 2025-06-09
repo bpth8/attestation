@@ -68,11 +68,6 @@ a {
 .main__profile__image {
   display: block;
 }
-@media screen and (max-width: 992px) {
-  .main__profile__image {
-    width: 58.5vw;
-  }
-}
 .main__profile__backround {
   position: absolute;
   bottom: 0;
