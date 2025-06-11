@@ -1,6 +1,15 @@
 .flexbox {
   display: flex;
-  gap: clamp(25px, 10vw, 50px);
+  gap: 50px;
+
+  @media screen and (max-width: 992px) {
+    gap: 25px;
+  }
+
+  @media screen and (max-width: 540px) {
+    display: block;
+    padding: 0 75px 0 75px;
+  }
 }
 
 .main {
@@ -10,9 +19,6 @@
 
     &__image {
       display: block;
-      @media screen and (max-width: 992px) {
-
-      }
     }
 
     &__backround {
@@ -20,19 +26,20 @@
       bottom: 0;
       text-align: center;
       background-color: black;
-
-      // @media screen and (max-width: 992px) {
-        
-      // }
+      
+      @media screen and (max-width: 992px) {
+        position: static;
+      }
 
       &-title {
         font-weight: 400;
-        font-size: clamp(36px, 4.57vw, 64px);
+        font-size: 64px;
         color:white;
         padding: 14px 96px 14px 96px;
         
         @media screen and (max-width: 992px) {
           padding: 12px 61px 12px 61px;
+          font-size: 36px;
         }
       }
     }
