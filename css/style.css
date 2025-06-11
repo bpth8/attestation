@@ -52,11 +52,30 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 .flexbox {
   display: flex;
   gap: clamp(25px, 10vw, 50px);
@@ -75,6 +94,7 @@ a {
   background-color: black;
 }
 .main__profile__backround-title {
+  font-weight: 400;
   font-size: clamp(36px, 4.57vw, 64px);
   color: white;
   padding: 14px 96px 14px 96px;
