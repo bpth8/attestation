@@ -3,28 +3,22 @@
 
   @media screen and (max-width: 992px) {
     margin-top: 20px;
+    padding-bottom: 20px;
   }
 
   &__title {
-    font-size: clamp(32px, 1.4vw + 21px, 48px);
-
-    
+    font-size: clamp(24px, 1.74vw + 14.61px, 48px);
 
     &-city {
-    font-size: clamp(20px, 0.8vw + 13px, 24px);
+    font-size: clamp(18px, 0.522vw + 15.176px, 24px);
     margin-top: 20px;
     }
   }
 
   &__social {
     display: flex;
-    gap: 2.14vw;
-    margin-top: 50px;
-
-    @media screen and (max-width: 992px) {
-      margin-top: 30px;
-      font-size: 30px;
-    }
+    gap: 30px;
+    margin-top: clamp(16px, 2.46vw + 2.7px, 50px);
 
     &-effect {
       transition: transform 0.3s;
@@ -36,14 +30,14 @@
   }
 
   &__skills {
-  font-size: clamp(24px, 1.1vw + 10px, 32px);
-  margin-top: clamp(30px, 2.1vw + 7px, 50px);
+  font-size: clamp(20px, 1.043vw + 14.375px, 32px);
+  margin-top: clamp(16px, 2.46vw + 2.7px, 50px);
   
     &-list {
       display: flex;
       flex-wrap: wrap;
-      margin-top: 20px;
-      gap: 1.78vw;
+      margin-top: clamp(10px, 0.72vw + 6.09px, 20px);
+      gap: clamp(20px, 0.36vw + 18.05px, 25px);
       color: white;
 
       li {
@@ -58,6 +52,10 @@
           padding: 14px 45px 14px 45px;
         }
 
+        @media screen and (max-width: 540px) {
+          padding: 8px 35px 8px 35px;
+        }
+
         &:hover {
           transform: rotate(2deg) translate(5px);
         }
@@ -66,23 +64,23 @@
   }
 
   &__about {
-    margin-top: clamp(30px, 2.1vw + 7px, 50px);
-    font-size: clamp(20px, 1.3vw + 6px, 32px);
+    margin-top: clamp(16px, 2.46vw + 2.7px, 50px);
+    font-size: clamp(16px, 1.16vw + 9.74px, 32px);
 
     &-text {
     text-indent: 30px;
-    margin-top: 20px;
+    margin-top: clamp(10px, 0.72vw + 6.09px, 20px);
     }
   }
 
   &__contact {
-    margin-top: clamp(30px, 2.1vw + 7px, 50px);
+    margin-top: clamp(16px, 2.46vw + 2.7px, 50px);
 
     &__flexbox {
       display: flex;
-      font-size: clamp(24px, 1.1vw + 10px, 32px);
+      font-size: clamp(16px, 1.45vw + 9.42px, 32px);
       color: #121212;
-      gap: 2.14vw;
+      gap: clamp(20px, 0.36vw + 18.05px, 25px);
 
       &-mail {
         padding: 14px 243px 14px 16px;
@@ -92,6 +90,10 @@
 
         @media screen and (max-width: 992px) {
           padding: 14px 157px 14px 16px;
+        }
+
+        @media screen and (max-width: 992px) {
+          padding: 8px 129px 8px 16px;
         }
       }
 
@@ -104,12 +106,16 @@
         @media screen and (max-width: 992px) {
           padding: 14px 88px 14px 16px;
         }
+
+        @media screen and (max-width: 992px) {
+          padding: 8px 84px 8px 16px;
+        }
       }
     }
 
     &__button {
       margin-top: clamp(20px, 0.8vw + 14px, 25px);
-      font-size: clamp(24px, 1.1vw + 10px, 32px);
+      font-size: clamp(16px, 1.16vw + 9.74px, 32px);
       padding: 14px 207px 14px 207px;
       color: white;
       border-radius: 11px;
@@ -117,6 +123,10 @@
 
       @media screen and (max-width: 992px) {
       padding: 14px 134px 14px 134px;
+    }
+
+      @media screen and (max-width: 540px) {
+      padding: 8px 123px 8px 123px;
     }
 
       -webkit-transition: all 0.5s ease;

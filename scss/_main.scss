@@ -8,7 +8,7 @@
 
   @media screen and (max-width: 540px) {
     display: block;
-    padding: 0 75px 0 75px;
+    padding: 0 50px 0 75px;
   }
 }
 
@@ -40,6 +40,11 @@
         @media screen and (max-width: 992px) {
           padding: 12px 61px 12px 61px;
           font-size: 36px;
+        }
+
+        @media screen and (max-width: 540px) {
+          padding: 12px 111px 12px 111px;
+          font-size: 24px;
         }
       }
     }
