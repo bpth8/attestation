@@ -12,6 +12,15 @@
   }
 }
 
+.bg {
+  background: url(../img/pictures-bg.svg);
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 540px) {
+    background-position: bottom center;
+  }
+}
+
 .main {
 
   &__profile {
