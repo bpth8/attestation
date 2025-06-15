@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -62,6 +66,40 @@ body {
   margin: 0 auto;
 }
 
+form {
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+form input {
+  width: 48%;
+  border-radius: 11px;
+  padding: 0px 14px 0 16px;
+  height: 66px;
+  font-size: 32px;
+  color: #121212;
+}
+form input::-moz-placeholder {
+  display: flex;
+  font-size: 32px;
+  color: #000000;
+}
+form input::placeholder {
+  display: flex;
+  font-size: 32px;
+  color: #000000;
+}
+form button {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 11px;
+  background-color: #121212;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Medium.eot");
@@ -77,6 +115,7 @@ body {
   font-style: normal;
 }
 .flexbox {
+  height: 100vh;
   display: flex;
   gap: clamp(25px, 1.56vw + 7.57px, 50px);
 }
@@ -90,6 +129,7 @@ body {
 .bg {
   background: url(../img/pictures-bg.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (max-width: 540px) {
   .bg {
@@ -97,14 +137,29 @@ body {
   }
 }
 
-.main__profile {
+.main {
+  height: 100%;
   position: relative;
+  width: 35%;
+  background-image: url("../img/pictures.svg");
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 540px) {
+  .main {
+    width: 100%;
+    background-image: url("../img/pictures-mobile.svg");
+  }
 }
 .main__profile__image {
   display: block;
+  height: 100%;
+  width: 100%;
 }
 .main__profile__backround {
   position: absolute;
+  left: 0;
+  right: 0;
   width: 100%;
   bottom: 0;
   text-align: center;
@@ -113,7 +168,6 @@ body {
 }
 @media screen and (max-width: 992px) {
   .main__profile__backround {
-    position: static;
     padding: 12px 0;
   }
 }
@@ -129,12 +183,20 @@ body {
 }
 
 .personal {
+  width: 65%;
   margin-top: 40px;
+  overflow: auto;
+  padding-right: 20px;
 }
 @media screen and (max-width: 992px) {
   .personal {
     margin-top: 20px;
     padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .personal {
+    width: 100%;
   }
 }
 .personal__title {
@@ -146,6 +208,7 @@ body {
 }
 .personal__social {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: clamp(16px, 2.46vw + 2.7px, 50px);
 }

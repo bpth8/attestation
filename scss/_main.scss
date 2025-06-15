@@ -1,4 +1,5 @@
 .flexbox {
+  height: 100vh;
   display: flex;
   gap: clamp(25px, 1.56vw + 7.57px, 50px);
 
@@ -11,6 +12,7 @@
 .bg {
   background: url(../img/pictures-bg.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media screen and (max-width: 540px) {
     background-position: bottom center;
@@ -18,16 +20,32 @@
 }
 
 .main {
+  height: 100%;
+  position: relative;
+  width: 35%;
+  background-image: url('../img/pictures.svg');
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 540px) {
+    width: 100%;
+    background-image: url('../img/pictures-mobile.svg');
+  }
 
   &__profile {
-    position: relative;
+    // position: relative;
+    // height: 100%;
 
     &__image {
       display: block;
+      height: 100%;
+      width: 100%;
     }
 
     &__backround {
       position: absolute;
+      left: 0;
+      right: 0;
       width: 100%;
       bottom: 0;
       text-align: center;
@@ -37,7 +55,7 @@
 
 
       @media screen and (max-width: 992px) {
-        position: static;
+        // position: static;
         padding: 12px 0;
       }
 
