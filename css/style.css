@@ -99,7 +99,6 @@ body {
 }
 @media screen and (max-width: 540px) {
   .bg {
-    position: absolute;
     background-position: bottom center;
   }
 }
@@ -107,7 +106,7 @@ body {
 .main {
   height: 100%;
   position: relative;
-  width: 35%;
+  width: 30%;
   background-image: url("../img/pictures.svg");
   background-size: cover;
   background-position: center;

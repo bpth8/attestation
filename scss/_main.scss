@@ -16,7 +16,6 @@
   
 
   @media screen and (max-width: 540px) {
-    position: absolute;
     background-position: bottom center;
   }
 }
@@ -24,7 +23,7 @@
 .main {
   height: 100%;
   position: relative;
-  width: 35%;
+  width: 30%;
   background-image: url('../img/pictures.svg');
   background-size: cover;
   background-position: center;
