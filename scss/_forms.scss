@@ -1,0 +1,54 @@
+form {
+  max-width: clamp(390px, 22.5vw + 261px, 700px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: clamp(20px, 0.36vw + 18.05px, 25px);
+  margin-top: clamp(16px, 2.46vw + 2.7px, 50px);
+
+  input {
+    width: 48%;
+    border-radius: 11px;
+    padding: 0 14px 0 16px;
+    height: clamp(35px, 3.23vw + 17.56px, 66px);
+    font-size: clamp(16px, 1.45vw + 9.42px, 32px);
+    color: #121212;
+
+    @media screen and (max-width: 992px) {
+      padding: 0 10px 0 16px;
+    }
+
+    @media screen and (max-width: 540px) {
+      padding: 0 8px 0 16px;
+    }
+
+    &::placeholder {
+      display: flex;
+      font-size: clamp(16px, 1.45vw + 9.42px, 32px);
+      color: #000000;
+    }
+  }
+
+  button {
+    width: 100%;
+    font-size: clamp(16px, 1.16vw + 9.74px, 32px);
+    padding: 14px 0;
+    border-radius: 11px;
+    background-color: #121212;
+    color: #FFFFFF;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #414141;
+      -moz-box-shadow: 0 0 10px #000;
+      -webkit-box-shadow: 0 0 10px #000;
+      box-shadow: 0 0 10px #000;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+  }
+}
